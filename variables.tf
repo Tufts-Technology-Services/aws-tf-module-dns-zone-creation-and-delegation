@@ -13,3 +13,8 @@ variable "parent_zone_id"{
     description = "the identifier (not arn) of the parent route53 zone"
     type = string
 }
+
+variable "additional_delegation_records" {
+  type = map(any)
+  default = {}
+}
